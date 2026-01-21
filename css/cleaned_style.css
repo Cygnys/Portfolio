@@ -1,0 +1,305 @@
+/* ===============================
+   GLOBAL
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #ffbd39;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd56a;
+  text-decoration: underline;
+}
+
+/* ===============================
+   TYPOGRAPHY
+================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.big {
+  font-size: 4rem;
+  opacity: 0.06;
+}
+
+.big-2 {
+  font-size: 3.5rem;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.ftco_navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 15px 0;
+}
+
+.ftco-navbar-light {
+  background: transparent !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #ffbd39 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #e5e7eb !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffbd39 !important;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #020617);
+}
+
+.slider-item {
+  position: relative;
+}
+
+.slider-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.one-third.img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.subheading {
+  color: #ffbd39;
+  font-weight: 500;
+}
+
+/* ===============================
+   TYPING TEXT
+================================ */
+
+#typing-animation {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffbd39;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+
+.ftco-section {
+  padding: 5rem 0;
+}
+
+.ftco-no-pb {
+  padding-bottom: 0;
+}
+
+.ftco-no-pt {
+  padding-top: 0;
+}
+
+/* ===============================
+   ABOUT SECTION
+================================ */
+
+.ftco-about {
+  background-color: #020617;
+}
+
+.about-img img {
+  border-radius: 16px;
+}
+
+.title-s {
+  color: #ffbd39;
+  font-weight: 600;
+}
+
+.about-info span {
+  color: #cbd5f5;
+}
+
+/* ===============================
+   SKILLS
+================================ */
+
+.skill-mf .progress {
+  height: 8px;
+  background: #1e293b;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.skill-mf .progress-bar {
+  background-color: #ffbd39;
+}
+
+/* ===============================
+   RESUME / EXPERIENCE
+================================ */
+
+.resume-wrap {
+  background: #020617;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.resume-wrap:hover {
+  transform: translateY(-6px);
+}
+
+.resume-wrap .date {
+  color: #ffbd39;
+  font-weight: 600;
+}
+
+.resume-wrap .position {
+  color: #94a3b8;
+}
+
+/* ===============================
+   CAROUSEL
+================================ */
+
+.owl-carousel .owl-nav button {
+  color: #ffbd39;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: #64748b;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: #ffbd39;
+}
+
+/* ===============================
+   PROJECT CARDS
+================================ */
+
+.blog-entry {
+  background: #020617;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.block-20 {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   COUNTER
+================================ */
+
+.ftco-counter {
+  background: #020617;
+}
+
+.block-18 .number {
+  font-size: 2.5rem;
+  color: #ffbd39;
+}
+
+/* ===============================
+   CONTACT
+================================ */
+
+.contact-section .box {
+  background: #020617;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+.contact-section .box:hover {
+  transform: translateY(-6px);
+}
+
+.contact-section .icon {
+  color: #ffbd39;
+  font-size: 32px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.btn-primary {
+  background: #ffbd39;
+  border: none;
+  color: #020617;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #ffd56a;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+.ftco-footer {
+  background: #020617;
+  padding: 3rem 0;
+  color: #94a3b8;
+}
+
+.ftco-footer a {
+  color: #ffbd39;
+}
+
+/* ===============================
+   LOADER
+================================ */
+
+#ftco-loader {
+  background: #020617;
+}

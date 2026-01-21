@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #5c73e8, #3d3d46);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #6276e6;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+            height: 90px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #473fe3;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #4245e7;
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+
+        <form id="sheetdb-form"
+            action="https://script.google.com/macros/s/AKfycbzvZr2gGF7Sutx8PYgc0RGkihwe8Vxun9AC8MG9p-d7NUY4pgrvPdfL2z8iRjkZRC483A/exec"
+            method="post">
+
+            <label for="uname">Full Name</label>
+            <input type="text" id="uname" name="data[Name]" placeholder="Enter your name" required>
+
+            <label for="uemail">Email Address</label>
+            <input type="email" id="uemail" name="data[Email]" placeholder="Enter your email" required>
+
+            <label for="unumber">Phone Number</label>
+            <input type="number" id="unumber" name="data[Phone]" placeholder="Enter phone number" required>
+
+            <label for="umsg">Message</label>
+            <textarea id="umsg" name="data[Message]" placeholder="Write your message here..."></textarea>
+
+            <button type="submit">Contact Now</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("sheetdb-form");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            try {
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: new FormData(form)
+                });
+
+                const result = await response.json();
+
+                if (result.status !== "success") throw new Error("Failed");
+
+                alert("Submitted Successfully ✅");
+                form.reset();
+
+            } catch (error) {
+                alert("Submission failed. Please try again later.");
+                console.error(error);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
