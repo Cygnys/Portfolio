@@ -36,6 +36,50 @@
 }
 /*============================================*/
 
+/* CENTER CONTACT INFO SECTION */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* CENTER EACH CONTACT CARD */
+.contact-info .col-md-6,
+.contact-info .col-lg-3 {
+  display: flex;
+  justify-content: center;
+}
+
+/* CENTER CONTENT INSIDE CARD */
+.contact-info .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ICON CENTER FIX */
+.contact-info .icon {
+  margin-bottom: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+
+  background-color: #cccdce;   /* input background */
+  color: #111827;              /* text color */
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+
+
 /*image*/
 .one-third {
 
