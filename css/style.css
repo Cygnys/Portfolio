@@ -36,6 +36,15 @@
 }
 /*============================================*/
 
+/*image*/
+.one-third {
+
+
+   background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
 /* background color change*/
 
 html, body {
